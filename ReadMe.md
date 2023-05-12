@@ -143,4 +143,23 @@ Pada tabel selain customer tidak diperlukan penggunaan tmap karena tidak ada per
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/table%20statusorder%20hasil.png)
 
 
+### **4. Membuat Sample Procedure**
+
+Pada step terakhir diminta utuk membuat query SP bernama summary_order_status yang berisi perintah SELECT dan lakukan JOIN antara tabel fact dan dimension untuk menampilkan beberapa kolom yaitu OrderID, CustomerName, ProductName, Quantity, StatusOrder. Buatlah parameter bernama StatusID dari kolom StatusID (tabel DimStatusOrder) sebagai filter dari query tersebut. 
+Berdasarkan perintah di atas di dapat Query sebagai berikut :
+
+#### [Query Pembuatan Table](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP.sql)
+
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP.sql)
+
+**Hasil Test SP**
+
+**Test 1**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP%20test%201.png)
+
+**Test 2**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP%20test%202.png)
 
