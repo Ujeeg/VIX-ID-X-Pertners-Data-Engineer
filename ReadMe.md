@@ -148,10 +148,10 @@ Pada tabel selain customer tidak diperlukan penggunaan tmap karena tidak ada per
 Pada step terakhir diminta utuk membuat query SP bernama summary_order_status yang berisi perintah SELECT dan lakukan JOIN antara tabel fact dan dimension untuk menampilkan beberapa kolom yaitu OrderID, CustomerName, ProductName, Quantity, StatusOrder. Buatlah parameter bernama StatusID dari kolom StatusID (tabel DimStatusOrder) sebagai filter dari query tersebut. 
 Berdasarkan perintah di atas di dapat Query sebagai berikut :
 
-#### [Query Pembuatan Table](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP.sql)
+#### [Query Pembuatan SP](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP.sql)
 
 
-![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/65ad06bc1b3c0dc7bfad95f0845deaf6c22637b1/SP.sql)
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/5868d8c9a3c3b83905e892cff1016c51f68554e9/SP.png)
 
 **Hasil Test SP**
 
