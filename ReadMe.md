@@ -118,6 +118,7 @@ Pada tabel selain customer tidak diperlukan penggunaan tmap karena tidak ada per
 
 
 **4. Hasil Dari ETL**
+
 **DataBase**
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/Proof%20Database.png)
