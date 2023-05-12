@@ -18,16 +18,16 @@ Terdapat 4 tabel dengan 3 dimensinal table (customer, product, dan status_order)
 3. Pada table status_order 'status_id' menjadi Primary Key
 4. Pada table sales_order 'order_id' menjadi Primary Key
 
-![alt text](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/DWH%20database%20dimensional.png) 
 
-
-![alt text](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/DWH%20database%20fact.png)
-[Link Query](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/Create%20Table.sql)
 
 ### Membuat Database baru
 Pada tahap ini dilakukan pembuatan data base baru dengan nama 'DWH_Project' degan melakukan Query sebagai berikut :
 
-gambar
+![alt text](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/DWH%20database%20dimensional.png) 
+
+![alt text](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/DWH%20database%20fact.png)
+
+[Link Query](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/Create%20Table.sql)
 
 ### MEMbuat Tabel Baru
 Pada tahap ini dilakukan pembuatan table baru dengan format menyesuaikan dengan table pada database staging, dengan hint nama tabel dimension di ubah dengan nama DimCustomer, DimProduct, DimStatusOrder dan tabel Fact dengan nama FactSalesOrder. Pada nama column dihilangkan '_' dan penggunaan Pascal_Case, contoh customer_id = CustomerID. Ditambah database staging tabel customer akan ada penggabungan column first_name dan last_nama menjadi CustomerName,  Query sebagai berikut :
