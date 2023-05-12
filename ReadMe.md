@@ -61,8 +61,8 @@ Prosedur dilakukan dengan klik kiri pada meta data lalu klik kiri pada db Connec
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/83dbaecfb04ae8b74723b2603c22d939fa77219b/DWH%20connect%201.png)
 
-Isi nama project sesuai dengan referansi sendiri, untuk purpose optional atau sesuai kebutuhan. Lalu klik Next, akan muncul pop up seperti di samping.
+**Isi nama project sesuai dengan referensi sendiri, untuk purpose optional atau sesuai kebutuhan. Lalu klik Next, akan muncul pop up seperti di samping.**
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/83dbaecfb04ae8b74723b2603c22d939fa77219b/DWH%20connect%202.png)
 
-Pilih penggunaan SQL Server dan isi connection sesuai dengan user yang di gunakan pada sql server, lalu test connection, jika succesful maka bisa dilanjutkan dengan mengklik finish. Talend akan otomatis terhubung dengan SQL server yang digunakan.
+**Pilih penggunaan SQL Server dan isi connection sesuai dengan user yang di gunakan pada sql server, lalu test connection, jika succesful maka bisa dilanjutkan dengan mengklik finish. Talend akan otomatis terhubung dengan SQL server yang digunakan.**
