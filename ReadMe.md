@@ -46,7 +46,12 @@ Pada tahap ini dilakukan pembuatan data base baru dengan nama 'DWH_Project' dega
 Pada tahap ini dilakukan pembuatan table baru dengan format menyesuaikan dengan table pada database staging, dengan hint nama tabel dimension di ubah dengan nama DimCustomer, DimProduct, DimStatusOrder dan tabel Fact dengan nama FactSalesOrder. Pada nama column dihilangkan '_' dan penggunaan Pascal_Case, contoh customer_id = CustomerID. Ditambah database staging tabel customer akan ada penggabungan column first_name dan last_nama menjadi CustomerName,  Query sebagai berikut :
 #### [Query Pembuatan Table](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/Create%20Table.sql)
 
+Table Dimensional
+
 ![alt text](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/DWH%20database%20dimensional.png) 
+
+Tabel Fact
+
 ![alt text](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/a4f9f7f675c32d827486557c8f8e7a3f6fd904b7/DWH%20database%20fact.png)
 
 
