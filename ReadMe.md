@@ -56,7 +56,9 @@ Pada tahap ini dilakukan pembuatan table baru dengan format menyesuaikan dengan 
 
 
 ### **Implementasi ETL pada talend**
+
 **1.  Menghubungkan database pada SQL Server dengan Talend**
+
 Prosedur dilakukan dengan klik kiri pada meta data lalu klik kiri pada db Connection lalu pilih Create Connection, lalu akan muncul pop up seperti di bawah :
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/83dbaecfb04ae8b74723b2603c22d939fa77219b/DWH%20connect%201.png)
@@ -69,6 +71,7 @@ Prosedur dilakukan dengan klik kiri pada meta data lalu klik kiri pada db Connec
 
 
 **2.  Menarik atau mengambil table pada Database di SQL Server**
+
 Pada pengambilan dilakukan dengan mengklik kanan pada conection yang telah terhubung lalu pilih Retrive Schema, akan muncul pop up sebagai berikut :
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/ambil%20scheme%20lengkap.png)
@@ -77,6 +80,7 @@ Pada pop up 1 pilih next lalu akan muncul pop up 2 lalu pilih format dbo karena 
 
 
 **3.  Membuat Job Design**
+
 Pada step ini dilakukan pembuatan design job dengan mengklik kanan pad Job Design lalu pilih Create Job. Pada Step ini job design pada tabel customer memerlukan adanya tmap karena akan ada penggabungan antara column first_name dan last_name mendjadi CustomerName. Step yang dilakukan Merubah Component pada tmap menjadi sebagai berikut :
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/etl.png)
@@ -84,14 +88,18 @@ Pada step ini dilakukan pembuatan design job dengan mengklik kanan pad Job Desig
 Sebelumnya dilakukan setting pada component staging dan DWH Database, seperti berikut : 
 
 **Staging Setting**
+
+
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/Stagging.etl.png)
 
 **DWH Setting**
+
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/DWH.etl.png)
 
 Pada tabel selain customer tidak diperlukan penggunaan tmap karena tidak ada perubahan dalam kolom, untuk tabel lain hanya di lakukan penyettingan component pada staging dan DWH database, dan penyesuaian tabel yanga akan di tranfer pada kedua database.
 
 **4.  Job Design Yang Telah di Buat**
+
 **A. Job Design Customer**
 
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/job%20design.%20customer.png)
