@@ -8,10 +8,14 @@
 
 ### Melakukan Restore database
 Pada tahap ini dilakukan restore database staging.bak yang telah diberikan dari system Rakamin Academy. Hasil dari restore ini didapat 4 tabel yang terdiri dari tabel customer, product, sales order, status order. untuk lebih detailnya terdapat pada gambar dibawah :
+
+table customer
 ![image.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.customer.png) 
 
-\![image.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.product.png)
+table product
+![image.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.product.png)
 
+tabel sales_order
 ![image.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.sales%20_order.png)
 
 ![image.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.status_order.png)
