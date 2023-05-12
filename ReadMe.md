@@ -66,3 +66,72 @@ Prosedur dilakukan dengan klik kiri pada meta data lalu klik kiri pada db Connec
 ![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/83dbaecfb04ae8b74723b2603c22d939fa77219b/DWH%20connect%202.png)
 
 **Pilih penggunaan SQL Server dan isi connection sesuai dengan user yang di gunakan pada sql server, lalu test connection, jika succesful maka bisa dilanjutkan dengan mengklik finish. Talend akan otomatis terhubung dengan SQL server yang digunakan.**
+
+
+**2.  Menarik atau mengambil table pada Database di SQL Server**
+Pada pengambilan dilakukan dengan mengklik kanan pada conection yang telah terhubung lalu pilih Retrive Schema, akan muncul pop up sebagai berikut :
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/ambil%20scheme%20lengkap.png)
+
+Pada pop up 1 pilih next lalu akan muncul pop up 2 lalu pilih format dbo karena format in merupakan format default dari sql server, seterlah itu klik next lalu muncul pop up 3 disini sudah bisa dilihat tabel yang akan di hubungkan kedalam taled, jika format sudah di setting dengan yang di inginkan maka klik finish. Tabel pun sudah masuk kedalam talend. Step tersebut dilakukan juga pada penghubungan database staging yang akan di transfer ke database DWH_Project.
+
+
+**3.  Membuat Job Design**
+Pada step ini dilakukan pembuatan design job dengan mengklik kanan pad Job Design lalu pilih Create Job. Pada Step ini job design pada tabel customer memerlukan adanya tmap karena akan ada penggabungan antara column first_name dan last_name mendjadi CustomerName. Step yang dilakukan Merubah Component pada tmap menjadi sebagai berikut :
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/etl.png)
+
+Sebelumnya dilakukan setting pada component staging dan DWH Database, seperti berikut : 
+
+**Staging Setting**
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/Stagging.etl.png)
+
+**DWH Setting**
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/DWH.etl.png)
+
+Pada tabel selain customer tidak diperlukan penggunaan tmap karena tidak ada perubahan dalam kolom, untuk tabel lain hanya di lakukan penyettingan component pada staging dan DWH database, dan penyesuaian tabel yanga akan di tranfer pada kedua database.
+
+**4.  Job Design Yang Telah di Buat**
+**A. Job Design Customer**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/job%20design.%20customer.png)
+
+**B. Job Design Product**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/job%20design.%20product.png)
+
+**C. Job Design Sales Order**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/job%20design.%20sales_order.png)
+
+**D. Job Design Status Order**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/job%20design.%20status%20order.png)
+
+
+**4. Hasil Dari ETL**
+**DataBase**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/Proof%20Database.png)
+
+**A. Tabel DimCustomer**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/table%20customer%20hasil.png)
+
+
+**B. Tabel DimProduct**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/table%20product%20hasil.png)
+
+
+**C. Tabel DimSalesOrder**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/table%20salesorder%20hasil.png)
+
+
+**D. Tabel FactStatusOrder**
+
+![img.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/4d989de4834da9dea61206bfbb3419c376f0db4e/table%20statusorder%20hasil.png)
+
+
+
