@@ -9,7 +9,7 @@
 ### Melakukan Restore database
 Pada tahap ini dilakukan restore database staging.bak yang telah diberikan dari system Rakamin Academy. Hasil dari restore ini didapat 4 tabel yang terdiri dari tabel customer, product, sales order, status order. untuk lebih detailnya terdapat pada gambar dibawah :
 
-![alt text](DWH database.png)
+![alt text]([DWH database.png](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/2b53d6edd1747bb07542c10588ab9610d2a25d2c/DWH%20database.png))
 
 Terdapat 4 tabel dengan 3 dimensinal table (customer, product, dan status_order) dan 1 fact table(sales_order). Pada masing -masing dimensional table terdapat Primary Key dan tabel fact memiliki Primary Key dan Foreign Key :
 1. Pada table customer 'customer_id' menjadi Primary Key
