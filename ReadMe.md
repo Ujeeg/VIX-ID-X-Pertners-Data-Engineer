@@ -13,6 +13,7 @@ Pada tahap ini dilakukan restore database staging.bak yang telah diberikan dari 
 ![](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.sales%20_order.png)
 
 ![](https://github.com/Ujeeg/VIX-ID-X-Pertners-Data-Engineer/blob/c659daa029afca4090fbf0ad998c0f79a6289a6c/staging.status_order.png)
+
 Terdapat 4 tabel dengan 3 dimensinal table (customer, product, dan status_order) dan 1 fact table(sales_order). Pada masing -masing dimensional table terdapat Primary Key dan tabel fact memiliki Primary Key dan Foreign Key :
 1. Pada table customer 'customer_id' menjadi Primary Key
 2. Pada table product 'product_id' menjadi Primary Key
